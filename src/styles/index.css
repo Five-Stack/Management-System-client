@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    padding: 0 2px;
+}
+
+.lg-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.txt-blue {
+    color: #2A76E7;
+}
+
+.txt-black {
+    color: #2B355B;
+}
+
+.txt-white {
+    color: #F2F2F2;
+}
+
+.bg-primary{
+    background-color: #2A76E7;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out; /* You can adjust the duration and timing function as needed */
+  }
+
+  .fade-out {
+    animation: fadeOut 0.5s ease-in-out; /* You can adjust the duration and timing function as needed */
+  }
