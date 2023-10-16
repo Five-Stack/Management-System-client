@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #2B355B!important;
+  --secondary-color: #2A76E7!important;
+  --footer-bg: #3939C8!important;
+}  
+
+
 *{
     padding: 0 2px;
 }
@@ -27,6 +34,8 @@
     background-color: #2A76E7;
 }
 
+
+
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -51,3 +60,33 @@
   .fade-out {
     animation: fadeOut 0.5s ease-in-out; /* You can adjust the duration and timing function as needed */
   }
+
+  /* navbar and footer  */
+  
+body {
+    background-color: #F2F2F2;
+}
+
+.ns{
+    color: var(--primary-color);
+}
+
+.btn-primary {
+  color: white;
+  background: var(--secondary-color);
+  padding: 5px 30px;
+  border-radius: 4px;
+}
+
+.primary-color{
+  color: var(--primary-color);
+  transition: all 0.2s linear;
+}
+.primary-color:hover{
+  color: var(--secondary-color);
+  transition: all 0.2s linear;
+}
+
+.footer-bg{
+  background-color: var(--footer-bg);
+}
