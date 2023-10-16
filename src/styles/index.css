@@ -19,11 +19,11 @@
 }
 
 .txt-blue {
-    color: #2A76E7;
+    color: var(--secondary-color);
 }
 
 .txt-black {
-    color: #2B355B;
+    color: var(--primary-color);
 }
 
 .txt-white {
