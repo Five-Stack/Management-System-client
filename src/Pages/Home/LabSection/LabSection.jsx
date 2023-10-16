@@ -25,7 +25,7 @@ function LabSection() {
     return (
         <div className='lg-container'>
             <Title text="আমাদের শ্রেণীকক্ষ  ও ল্যাব সমূহ " />
-            <div className="">
+            <div>
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={50}
