@@ -16,9 +16,8 @@ function TeacherCard({ data }) {
                     <span className="cursor-pointer"><FaEnvelope /></span>
                     <Link to={data?.facebookUrl} className="cursor-pointer"><FaFacebook /></Link>
                 </div>
-                {console.log(data)}
                 {
-                    boxs.map(box => <div className="absolute -top-2 -left-2 -z-20 h-[60px] w-[60px] rounded-xl bg-[#1460D1]"></div>)
+                    boxs.map((box, index) => <div key={index} className="absolute -top-2 -left-2 -z-20 h-[60px] w-[60px] rounded-xl bg-[#1460D1]"></div>)
                 }
             </div>
     )
