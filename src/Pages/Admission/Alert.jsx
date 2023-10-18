@@ -12,7 +12,7 @@ const Alert = () => {
     }
     return (
 
-        <div className={`h-[284px] bg-[#DCE1EE] mx-auto mt-10 rounded-lg flex justify-center items-center px-4 relative ${showAlert ? 'block' : 'opacity-0 transition-opacity duration-200'} ${hidden && 'hidden'} `}>
+        <div className={`h-[284px] bg-[#DCE1EE] mx-auto mt-10 rounded-2xl flex justify-center items-center px-4 relative ${showAlert ? 'block' : 'opacity-0 transition-opacity duration-200'} ${hidden && 'hidden'} `}>
 
             <svg onClick={handleAlert} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7 absolute right-5 top-5 hover:text-red-500 transition-colors duration-150">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
