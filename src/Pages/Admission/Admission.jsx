@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import YearOption from './YearOption';
 import { useForm } from 'react-hook-form';
+import Alert from './Alert';
 
 
 
@@ -16,6 +17,7 @@ const Admission = () => {
 
     return (
         <div className='lg-container'>
+            <Alert />
 
             <div className='max-w-6xl mx-auto bg-white my-16 px-28 py-20'>
                 <h3 className='font-medium text-3xl text-center pb-10'>এডমিশন</h3>
