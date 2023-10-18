@@ -21,7 +21,7 @@ const YearOption = ({ startYear, endYear }) => {
 
     return (
         <>
-            {Years.map(year => <option value={year}>{year}</option>)}
+            {Years.map((year, index) => <option key={index} value={year}>{year}</option>)}
         </>
     );
 };
