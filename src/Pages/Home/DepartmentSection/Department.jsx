@@ -24,7 +24,7 @@ const Department = () => {
     return (
         <div className='lg-container'>
             <Title
-                text='পরিচালক ও সকল শিক্ষক বৃন্দ্র '
+                text='ডিপার্টমেন্ট সমূহ'
             ></Title>
             <div className={`grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4`}>
                 {
