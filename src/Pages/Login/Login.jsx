@@ -14,7 +14,8 @@ const Login = () => {
 
     return (
         <div className='lg-container'>
-            <div className='flex my-20'>                
+            <div className='flex my-20'> 
+                
                 {/* login page left side design */}
                 <div className="basis-[60%] h-[450px] bg-[#dfebf4] text-center relative overflow-hidden z-10 rounded-l-xl">
                     <div className='pt-10 z-30'>
@@ -58,7 +59,8 @@ const Login = () => {
                         </div>
                     </form>
                 </div>
-                 {/* login page right side design end */}
+                {/* login page right side design end */}
+                
             </div>
         </div>
     );
