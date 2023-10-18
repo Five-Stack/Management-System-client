@@ -11,15 +11,15 @@ const Admission = () => {
         handleSubmit,
         watch,
         formState: { errors },
-    } = useForm()
+    } = useForm();
 
-    const onSubmit = (data) => console.log(data)
+    const onSubmit = (data) => console.log(data);
 
     return (
         <div className='lg-container'>
             <Alert />
 
-            <div className='max-w-6xl mx-auto bg-white mb-16 px-4 py-10 md:px-28 md:py-20'>
+            <div className='max-w-6xl mx-auto bg-white my-16 px-4 py-10 md:px-28 md:py-20 rounded-xl'>
                 <h3 className='font-medium text-3xl text-center pb-10'>এডমিশন</h3>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className='md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-10 space-y-6'>
