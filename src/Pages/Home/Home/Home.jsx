@@ -2,11 +2,14 @@ import React from 'react'
 import Department from '../DepartmentSection/Department'
 import LabSection from '../LabSection/LabSection'
 import TeacherSection from '../TeacherSection/TeacherSection'
+import BannerSection from '../BannerSection/BannerSection'
+import BenefitsSection from '../BenefitsSection/BenefitsSection'
 
 const Home = () => {
   return (
     <>
-      <div className='text-center font-bold text-red-400 text-2xl mt-5'>This Is Our Home Page:)</div>
+      <BannerSection/>
+      <BenefitsSection/>
       <Department></Department>
       <LabSection/>
       <TeacherSection/>
