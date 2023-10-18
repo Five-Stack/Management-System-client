@@ -49,7 +49,7 @@ function LabSection() {
                             <LabCard data={item} />
                         </SwiperSlide>)
                     }
-                    <div className="flex items-center gap-4 text-xl text-white absolute bottom-0 right-[5%]">
+                    <div className="flex items-center gap-4 text-xl text-white absolute bottom-0 right-0">
                         <span className='bg-[#115ED0] p-2 rounded-full swiper-button-prev cursor-pointer z-20'><FaAngleLeft /></span>
                         <span className='bg-[#115ED0] p-2 rounded-full swiper-button-next cursor-pointer z-20'><FaAngleRight /></span>
                     </div>

@@ -37,7 +37,7 @@ function TeacherSection() {
                     className="mySwiper mt-12"
                 >
                     {
-                        labsData?.map(item => <SwiperSlide className='mt-8' key={item?._id} data-history="1">
+                        labsData?.map(item => <SwiperSlide className='mt-8 ml-2' key={item?._id} data-history="1">
                             <TeacherCard data={item}/>
                         </SwiperSlide>)
                     }
