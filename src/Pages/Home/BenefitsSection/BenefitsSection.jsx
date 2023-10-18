@@ -36,15 +36,15 @@ function BenefitsSection() {
         <div className="basis-1/2 grid grid-cols-2 md:grid-cols-3 items-center gap-4">
             {
                 list.map((item, index) => 
-                    <div key={index} className="px-3 py-6 rounded-md bg-white transition-all ease-in-out delay-200 hover:bg-[#115ED0] hover:text-white cursor-pointer shadow-md flex flex-col items-center gap-3 text-center">
+                    <div key={index} className="px-3 py-6 h-[180px] rounded-md bg-white transition-all ease-in-out delay-200 hover:bg-[#115ED0] hover:text-white cursor-pointer shadow-md flex flex-col items-center gap-3 text-center">
                         <img src={item?.img} />
                         <p>{item?.name}</p>
                     </div>
                 )
             }
         </div>
-        <div className="basis-1/2 h-full bg-[rgba(217,217,217,0.28)] flex flex-col items-center text-center gap-6 py-[112px]">
-            <h3 className="text-2xl px-24 text-[#2A3656] font-bold">সিসি ক্যামেরার দ্বারা ক্লাস পর্যবেক্ষণ করা হয়।</h3>
+        <div className="basis-1/2 h-full bg-[rgba(217,217,217,0.28)] flex flex-col items-center text-center gap-6 px-8 lg:px-0 py-[112px]">
+            <h3 className="text-2xl lg:px-24 text-[#2A3656] font-bold">সিসি ক্যামেরার দ্বারা ক্লাস পর্যবেক্ষণ করা হয়।</h3>
             <p className="text-[#454545] text-[14px]">সর্বক্ষণ প্রত্যেক শ্রেণিকক্ষে সিসি ক্যামেরা দ্বারা ক্লাস পর্যবেক্ষণ করা হয়।</p>
         </div>
       </div>
