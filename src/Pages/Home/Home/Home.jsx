@@ -4,7 +4,7 @@ import Department from '../DepartmentSection/Department'
 const Home = () => {
   return (
     <>      
-      <Department></Department>
+      <Department />
     </>
   )
 }
