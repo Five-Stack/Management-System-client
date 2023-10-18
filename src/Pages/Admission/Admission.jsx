@@ -19,10 +19,10 @@ const Admission = () => {
         <div className='lg-container'>
             <Alert />
 
-            <div className='max-w-6xl mx-auto bg-white my-16 px-28 py-20'>
+            <div className='max-w-6xl mx-auto bg-white mb-16 px-4 py-10 md:px-28 md:py-20'>
                 <h3 className='font-medium text-3xl text-center pb-10'>এডমিশন</h3>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <div className='grid grid-cols-2 gap-x-4 gap-y-10'>
+                    <div className='md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-10 space-y-6'>
                         <div className='relative'>
                             <label className="block mb-2 text-sm txt-blue font-medium dark:text-white">টেকনোলজির নাম *</label>
                             <select {...register('technologyName', { required: true })} id="countries" className="bg-[#D9D9D952] border-2 focus:border border-opacity-60 border-blue-500 text-gray-500 text-sm rounded-lg block w-full p-2.5">
