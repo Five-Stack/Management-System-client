@@ -31,7 +31,7 @@ function BenefitsSection() {
 
   return (
     <div className="bg-[#F2F2F2] pb-20">
-      <Title text="আমাদের সুবিধা সমূহ "/>
+      <Title text="আমাদের সুবিধা সমূহ"/>
       <div className=" lg-container flex flex-col md:flex-row items-center justify-center gap-6">
         <div className="basis-1/2 grid grid-cols-2 md:grid-cols-3 items-center gap-4">
             {
