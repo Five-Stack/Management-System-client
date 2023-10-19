@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../../assets/logo.png";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -86,15 +87,14 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <button className="btn btn-primary">লগইন</button>
+                <Link to={'/login'}><button onClick={() => console.log('click')} className="btn btn-primary">লগইন</button></Link>
               </li>
             </ul>
           </div>
         </div>
         <aside
-          className={`${
-            open ? " px-4 pb-6 shadow-lg h-[330px]" : "h-[0px] "
-          } overflow-hidden duration-150 `}
+          className={`${open ? " px-4 pb-6 shadow-lg h-[330px]" : "h-[0px] "
+            } overflow-hidden duration-150 `}
         >
           <ul className="  md:bg-white">
             <li className="mt-3">
@@ -138,7 +138,7 @@ const Header = () => {
               </a>
             </li>
             <li className="mt-3">
-              <button className="btn btn-primary">লগইন</button>
+              <Link to={'/login'}><button className="btn btn-primary">লগইন</button></Link>
             </li>
           </ul>
         </aside>
