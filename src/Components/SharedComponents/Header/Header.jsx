@@ -87,7 +87,7 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <Link to={'/login'}><buttom onClick={() => console.log('click')} className="btn btn-primary">লগইন</buttom></Link>
+                <Link to={'/login'}><button onClick={() => console.log('click')} className="btn btn-primary">লগইন</button></Link>
               </li>
             </ul>
           </div>
@@ -138,7 +138,7 @@ const Header = () => {
               </a>
             </li>
             <li className="mt-3">
-              <Link to={'/login'}><buttom className="btn btn-primary">লগইন</buttom></Link>
+              <Link to={'/login'}><button className="btn btn-primary">লগইন</button></Link>
             </li>
           </ul>
         </aside>
