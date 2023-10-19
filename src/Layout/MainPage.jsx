@@ -7,7 +7,7 @@ const MainPage = () => {
   return (
     <>
       <Header />
-      <div className='min-h-[calc(100vh-140px)]'>
+      <div className=''>
         <Outlet></Outlet>
       </div>
       <Footer />

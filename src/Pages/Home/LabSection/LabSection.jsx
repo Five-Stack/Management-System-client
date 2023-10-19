@@ -16,6 +16,8 @@ import LabCard from './LabCard';
 function LabSection() {
     const [labsData, setLabData] = useState([]);
 
+    const large = window.innerWidth;
+
     useEffect(() => {
         axios.get('https://management-system-server.vercel.app/api/labs')
             .then(data => setLabData(data.data))
@@ -27,7 +29,7 @@ function LabSection() {
             <Title text="আমাদের শ্রেণীকক্ষ  ও ল্যাব সমূহ " />
             <div>
                 <Swiper
-                    slidesPerView={3}
+                    slidesPerView={large > 768 ? 3 : 1}
                     spaceBetween={50}
                     navigation={{
                         nextEl: '.swiper-button-next',
@@ -49,7 +51,7 @@ function LabSection() {
                             <LabCard data={item} />
                         </SwiperSlide>)
                     }
-                    <div className="flex items-center gap-4 text-xl text-white absolute bottom-0 right-0">
+                    <div className="lg:flex items-center gap-4 text-xl text-white absolute bottom-0 right-0 hidden">
                         <span className='bg-[#115ED0] p-2 rounded-full swiper-button-prev cursor-pointer z-20'><FaAngleLeft /></span>
                         <span className='bg-[#115ED0] p-2 rounded-full swiper-button-next cursor-pointer z-20'><FaAngleRight /></span>
                     </div>
