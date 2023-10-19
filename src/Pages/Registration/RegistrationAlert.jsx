@@ -20,6 +20,7 @@ const RegistrationAlert = () => {
         const body = document.body;
         body.style.overflow = 'hidden'
         setHeight(bodyHeight);
+        window.scrollTo(0, 0);
     }, []);
     return (
 
@@ -33,7 +34,6 @@ const RegistrationAlert = () => {
                 </svg>
                 <h2 className='text-3xl text-black font-bold mb-7'>Alert Title</h2>
                 <p className='leading-normal txt-black text-justify'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
                 </p>
             </div>
