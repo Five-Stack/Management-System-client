@@ -13,17 +13,19 @@ import TeacherCard from './TeacherCard';
 function TeacherSection() {
     const [labsData, setLabData] = useState([]);
 
+    const large = window.innerWidth;
+
     useEffect(() => {
         axios.get('https://management-system-server.vercel.app/api/teachers')
             .then(data => setLabData(data.data))
     }, [])
 
     return (
-        <div className='lg-container'>
+        <div className='lg-container px-1'>
             <Title text="পরিচালক ও সকল শিক্ষখ বৃন্দ্র " />
             <div>
                 <Swiper
-                    slidesPerView={4}
+                    slidesPerView={large > 768 ? 4 : 1}
                     spaceBetween={50}
                     pagination={true}
                     autoplay={{
@@ -37,7 +39,7 @@ function TeacherSection() {
                     className="mySwiper mt-12"
                 >
                     {
-                        labsData?.map(item => <SwiperSlide className='mt-8 ml-2' key={item?._id} data-history="1">
+                        labsData?.map(item => <SwiperSlide className='mt-8 lg:ml-2' key={item?._id} data-history="1">
                             <TeacherCard data={item}/>
                         </SwiperSlide>)
                     }
