@@ -13,11 +13,11 @@ const Login = () => {
     const onSubmit = (data) => console.log(data);
 
     return (
-        <div className='lg-container'>
-            <div className='flex my-20'> 
+        <div className='lg-container px-2'>
+            <div className='md:flex  my-20'> 
                 
                 {/* login page left side design */}
-                <div className="basis-[60%] h-[450px] bg-[#dfebf4] text-center relative overflow-hidden z-10 rounded-l-xl">
+                <div className="basis-[60%] h-[450px] bg-[#dfebf4] text-center relative overflow-hidden z-10 rounded-l-xl hidden md:block">
                     <div className='pt-10 z-30'>
                         <figure className='flex justify-center mb-8'>
                             <img src={logo} alt="saic-logo" />
@@ -36,7 +36,7 @@ const Login = () => {
                 
 
                  {/* login page right side design */}
-                <div className="w-1/2 h-[450px] bg-white pt-16 px-10 rounded-r-xl">
+                <div className="lg:w-1/2 h-[450px] bg-white pt-16 px-10 rounded-xl md:rounded-l-none md:rounded-r-xl">
                     <h3 className='text-3xl font-bold mb-10'>লগইন</h3>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div className='mb-7 relative'>
@@ -55,7 +55,7 @@ const Login = () => {
 
                         <div className='flex justify-between items-center mt-7'>
                             <label className="block mt-3 text-sm txt-blue font-medium pr-1 hover:cursor-pointer hover:text-blue-700">অ্যাকাউন্ট তৈরির জন্য আবেদন করুন</label>
-                            <button type='submit' className='text-sm bg-primary txt-white px-8 py-3 rounded-md'>সাবমিট</button>
+                            <button type='submit' className='text-sm bg-primary txt-white px-6 py-2 md:px-8 md:py-3 rounded-md'>সাবমিট</button>
                         </div>
                     </form>
                 </div>
