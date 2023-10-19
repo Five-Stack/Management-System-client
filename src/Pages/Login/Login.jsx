@@ -1,6 +1,7 @@
 import logo from '../../assets/logo.png'
 import img1 from '../../assets/boy_with_book.png'
 import { useForm } from 'react-hook-form';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     const {
@@ -13,9 +14,9 @@ const Login = () => {
     const onSubmit = (data) => console.log(data);
 
     return (
-        <div className='lg-container px-2'>
-            <div className='md:flex  my-20'> 
-                
+        <div className='lg-container px-2 fade-in'>
+            <div className='md:flex  my-20'>
+
                 {/* login page left side design */}
                 <div className="basis-[60%] h-[450px] bg-[#dfebf4] text-center relative overflow-hidden z-10 rounded-l-xl hidden md:block">
                     <div className='pt-10 z-30'>
@@ -24,8 +25,8 @@ const Login = () => {
                         </figure>
                         <h3 className=' text-3xl leading-normal font-extrabold tracking-tight'><span className='text-[#115ED0]'>সাইক ইনস্টিটিউট</span> <span className='txt-black'>অব ম্যানেজমেন্ট<br />অ্যান্ড টেকনোলজিতে</span></h3>
                         <p className='text-[#F71E52] text-xl font-bold'>আপনাকে স্বাগতম</p>
-                    </div>                
-                    
+                    </div>
+
                     <div className='w-[650px] h-[340px] bg-[#d3e4f5] rounded-[50%] rotate-45 absolute top-[50%] right-[35%] -z-10'></div>
 
                     <figure className='absolute bottom-0 left-0'>
@@ -33,9 +34,9 @@ const Login = () => {
                     </figure>
                 </div>
                 {/* login page left side design end */}
-                
 
-                 {/* login page right side design */}
+
+                {/* login page right side design */}
                 <div className="lg:w-1/2 h-[450px] bg-white pt-16 px-10 rounded-xl md:rounded-l-none md:rounded-r-xl">
                     <h3 className='text-3xl font-bold mb-10'>লগইন</h3>
                     <form onSubmit={handleSubmit(onSubmit)}>
@@ -54,13 +55,17 @@ const Login = () => {
                         <label className="block mt-3 text-sm txt-blue font-medium text-right pr-1 hover:cursor-pointer hover:text-blue-700">ফরগেট পাসওয়ার্ড</label>
 
                         <div className='flex justify-between items-center mt-7'>
-                            <label className="block mt-3 text-sm txt-blue font-medium pr-1 hover:cursor-pointer hover:text-blue-700">অ্যাকাউন্ট তৈরির জন্য আবেদন করুন</label>
+                            <label className="block mt-3 text-sm txt-blue font-medium pr-1 hover:cursor-pointer hover:text-blue-700">
+                                <Link to={'/registration'}>
+                                    অ্যাকাউন্ট তৈরির জন্য আবেদন করুন
+                                </Link>
+                            </label>
                             <button type='submit' className='text-sm bg-primary txt-white px-6 py-2 md:px-8 md:py-3 rounded-md'>সাবমিট</button>
                         </div>
                     </form>
                 </div>
                 {/* login page right side design end */}
-                
+
             </div>
         </div>
     );
