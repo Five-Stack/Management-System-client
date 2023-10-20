@@ -7,8 +7,8 @@ import './fadeEffect.css'
 
 function BannerSection() {
     const [imageUrls, setImageUrls] = useState([]);
-    const [prevIndex, setPrevIndex] = useState(0);
-    const [currentImageIndex, setCurrentImageIndex] = useState(prevIndex);
+    const [prevIndex, setPrevIndex] = useState(1);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [imageOpacity, setImageOpacity] = useState(1);
     
     useEffect(() => {
