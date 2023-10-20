@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { Navigation, Pagination, History, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Title from '../../../Components/SharedComponents/Title/Title';
@@ -32,14 +32,11 @@ function TeacherSection() {
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
-                    history={{
-                        key: 'slide',
-                    }}
-                    modules={[Autoplay, Navigation, Pagination, History]}
+                    modules={[Autoplay, Navigation, Pagination]}
                     className="mySwiper mt-12"
                 >
                     {
-                        labsData?.map(item => <SwiperSlide className='mt-8 lg:ml-2' key={item?._id} data-history="1">
+                        labsData?.map(item => <SwiperSlide className='mt-8 lg:ml-2' key={item?._id}>
                             <TeacherCard data={item}/>
                         </SwiperSlide>)
                     }

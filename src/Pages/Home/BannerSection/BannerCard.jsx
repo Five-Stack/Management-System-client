@@ -20,7 +20,7 @@ function BannerCard() {
         }
     ]
     return (
-        <div className="lg:w-[60%] bg-[#115ED0] p-8 relative left-1/2 -translate-x-1/2 bottom-5 lg:bottom-12 lg:rounded-lg shadow-md grid md:grid-cols-2 lg:grid-cols-3 items-center gap-6">
+        <div className="lg:w-[60%] bg-[#115ED0] p-8 lg:relative lg:left-1/2 lg:-translate-x-1/2 lg:bottom-12 lg:rounded-lg shadow-md grid md:grid-cols-2 lg:grid-cols-3 items-center gap-6">
             {
                 cards.map((item, index) =>
                     <div key={index} className="p-2 bg-[rgba(217,217,217,0.27)] text-white flex items-center gap-2 rounded-md">
