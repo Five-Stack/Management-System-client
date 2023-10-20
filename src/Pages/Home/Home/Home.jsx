@@ -4,6 +4,7 @@ import LabSection from '../LabSection/LabSection'
 import TeacherSection from '../TeacherSection/TeacherSection'
 import BannerSection from '../BannerSection/BannerSection'
 import BenefitsSection from '../BenefitsSection/BenefitsSection'
+import ContactUsSection from '../ContactUsSection/ContactUsSection'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Department />
       <LabSection/>
       <TeacherSection/>
+      <ContactUsSection/>
     </>
   )
 }

@@ -11,7 +11,7 @@ const Header = () => {
             <span className="flex flex-col gap-0">
               <b className="text-blue-700">SIMT</b>
               <p className="p-0 text-sm text-gray-400">
-                Best politachnical of Dhaka
+                Best Polytechnic of Dhaka
               </p>
             </span>
           </a>
