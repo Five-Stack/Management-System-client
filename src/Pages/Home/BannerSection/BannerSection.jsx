@@ -7,10 +7,10 @@ import './fadeEffect.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
-import 'swiper/css/effect-cube';
+import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 
-import { EffectCube, Autoplay } from 'swiper/modules';
+import { EffectFade, Autoplay } from 'swiper/modules';
 
 
 function BannerSection() {
@@ -58,7 +58,7 @@ function BannerSection() {
                 <div className="h-[400px] lg:h-[600px] w-full bg-gradient-to-r from-[rgba(255,255,255,1)] to-transparent absolute top-0 left-0 z-10">
                 </div>
                 <div className="h-full w-full absolute top-0 left-0 z-10">
-                    <div className="lg-container h-full flex flex-col justify-center items-center md:items-start">
+                    <div className="lg-container h-full flex flex-col justify-center items-center md:items-start bg-transparent">
                         <h1 className='text-[#1B2637] text-3xl lg:text-[42px] lg:w-[60%] text-center lg:text-left font-bold'><span className='text-[#2A76E7] leading-snug'>সাইক</span> ইনস্টিটিউট অব মেনেজমেন্ট এন্ড টেকনোলজি </h1>
                         <p className='text-xl mt-4'>Best Polytechnic Institute In Dhaka</p>
                         <Link to={'/admission'}>
@@ -69,19 +69,19 @@ function BannerSection() {
                     </div>
                 </div>
                 <Swiper
-                    effect={'cube'}
+                    effect={'fade'}
                     grabCursor={true}
                     autoplay={{
                         delay: 5000,
                         disableOnInteraction: false,
                     }}
-                    modules={[EffectCube, Autoplay]}
-                    className="mySwiper"
+                    modules={[EffectFade, Autoplay]}
+                    className="mySwiper h-[400px] lg:h-[600px]"
                 >
                     {
                         imageUrls.map(item =>
                             <SwiperSlide>
-                                <img src={item?.bannerImg} className='h-[400px] lg:h-[600px]' />
+                                <img src={item?.bannerImg} className='h-[400px] lg:h-[600px] object-cover md:object-fill' />
                             </SwiperSlide>
                         )
                     }
