@@ -1,0 +1,11 @@
+.fade-in-out {
+    transition: 1s ease-in-out;
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+.swiper-cube .swiper-cube-shadow:before{
+    display: none;
+}

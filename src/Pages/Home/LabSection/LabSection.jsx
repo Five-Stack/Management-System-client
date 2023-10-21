@@ -7,7 +7,7 @@ import 'swiper/css/pagination';
 
 import './labSection.css'
 
-import { Navigation, Pagination, History, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import LabCard from './LabCard';
@@ -40,14 +40,11 @@ function LabSection() {
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
-                    history={{
-                        key: 'slide',
-                    }}
-                    modules={[Autoplay,Navigation, Pagination, History]}
-                    className="mySwiper relative"
+                    modules={[Autoplay,Navigation, Pagination]}
+                    className="relative"
                 >
                     {
-                        labsData?.map(item => <SwiperSlide key={item?._id} data-history="1">
+                        labsData?.map(item => <SwiperSlide key={item?._id}>
                             <LabCard data={item} />
                         </SwiperSlide>)
                     }
